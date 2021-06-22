@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Hello World</h1>
+
+    <!-- BÀI TẬP 1  -->
+    <h1>Bài tập 1: Tính tiền lương nhân viên</h1>
+    <p>Nhập vào số ngày làm để tính lương nhân viên:</p>
+    <label>Số ngày làm</label>
+    <input type="text" id="soNgay" value="" />
+    <button onclick="tinhLuong()">Tính tiền lương</button>
+    <span>Tiền lương của nhân viên:</span>
+    <span id="tongLuong"></span>
+
+    <!-- BÀI TẬP 2  -->
+    <h1>Bài tập 2: Tính giá trị trung bình</h1>
+    <p>Nhập vào 5 số thực muốn tính giá trị trung bình</p>
+    <div
+      style="display: grid; grid-template-columns: repeat(2, 1fr); width: 25%"
+    >
+      <label>Số thứ nhất</label><input type="text" id="soThuNhat" value="" />
+      <label>Số thứ hai</label><input type="text" id="soThuHai" value="" />
+      <label>Số thứ ba</label><input type="text" id="soThuBa" value="" />
+      <label>Số thứ tư</label><input type="text" id="soThuTu" value="" />
+      <label>Số thứ năm</label><input type="text" id="soThuNam" value="" />
+      <button onclick="tinhTrungBinh()">Tính giá trị trung bình:</button
+      ><span id="trungBinh"></span>
+    </div>
+
+    <!-- BÀI TẬP 3  -->
+    <h1>Bài tập 3: Quy đổi tiền</h1>
+    <p>Nhập vào số tiền USD muốn đổi sang VND:</p>
+    <input type="text" id="soTienUSD" />
+    <button onclick="quyDoi()">Quy đổi tiền</button>
+    <p id="tienQuyDoi"></p>
+
+    <!-- BÀI TẬP 4  -->
+    <h1>Bài tập 4: Tính diện tích, chu vi hình chữ nhật</h1>
+    <p>Nhập vào chiều dài và chiều rộng hình chữ nhật</p>
+    <label for="">Chiều dài: </label><input type="text" id="chieuDai" />
+    <label for="">Chiều rộng: </label><input type="text" id="chieuRong" />
+    <button onclick="tinhPS()">Tính diện tích, chu vi</button>
+    <p id="dienTich"></p>
+    <p id="chuVi"></p>
+
+    <!-- BÀI TẬP 5  -->
+    <h1>Bài tập 5: Tính tổng 2 ký số</h1>
+    <p>Nhập vào số tự nhiên có 2 chữ số cần tính tổng 2 ký số</p>
+    <input type="text" id="soTuNhien" />
+    <button onclick="tinhTongKS()">Tính tổng 2 ký số:</button
+    ><span id="tongKS"></span>
+
+    <script src="./js/Bai-tap-1.js"></script>
+    <script src="./js/Bai-tap-2.js"></script>
+    <script src="./js/Bai-tap-3.js"></script>
+    <script src="./js/Bai-tap-4.js"></script>
+    <script src="./js/Bai-tap-5.js"></script>
+  </body>
+</html>
